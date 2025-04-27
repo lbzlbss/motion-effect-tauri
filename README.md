@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## AI提示词生成简单桌面端应用 Next.js + Tauri + Tare
+
+### 对话流程
+```md
+1. 使用Next.js和tauri创建一个新项目
+2. npm run tauri build配置 - 查看nextjs文档
+3. 生成一个图片压缩功能
+4. 增加图片上传压缩的UI
+5. 文件不保存在tmp目录，直接保存在原本文件的路径
+6. 图片压缩后保存在上传源文件所在的目录位置，不要保存在项目中
+7. 使用文件名不带图片格式+随机hash值作为文件名
+8. 如何使用tauri将项目打成应用
+```
+
+### 命令
+```md
+1. npx create-next-app@latest --typescript  // next创建
+2. pnpm run dev // nextjs启动
+3. pnpm tauri init // tauri安装
+4. pnpm run tauri dev    // 客户端启动
+5. pnpm run tauri build  // 打包
+```
